@@ -1,5 +1,7 @@
 #!/bin/sh
 
+r=0
+
 if [ $1 -gt $2 ]
 then
     a=$1
@@ -9,7 +11,15 @@ else
     b=$1
 fi
 
-r=`expr $a % $b`
+if [ $a -eq 0 ]
+then 
+    echo "error"
+elif [ $b -eq 0 ]
+then
+    b=$a
+else
+    r=`expr $a % $b`
+fi
 
 while [ $r -ne 0 ]; do
     a=$b
