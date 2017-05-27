@@ -1,3 +1,6 @@
-language: generic
+language: python
+python:
+ -"2.7"
+ -"2.8"
 script:
- - bash -e ./travis-test.bash
+ - bash ./test.bash
