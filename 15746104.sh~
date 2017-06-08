@@ -21,8 +21,6 @@ else
     r=`expr $a % $b`
 fi
 
-r=`expr $a % $b`
-
 while [ $r -ne 0 ]; do
     a=$b
     b=$r

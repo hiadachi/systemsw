@@ -11,7 +11,7 @@ ERROR_EXIT () {
 # TEST1: Normal case (52, 117 => 13)                                            
 #————————————————————————
 echo 13 > $tmp-ans
-./15746104.sh 51 117 >$tmp-out || ERROR_EXIT "TEST1-1"
+./15746104.sh 52 117 >$tmp-out || ERROR_EXIT "TEST1-1"
 diff $tmp-ans $tmp-out || ERROR_EXIT "TEST1-2"
 
 
