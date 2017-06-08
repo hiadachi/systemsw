@@ -14,7 +14,7 @@ fi
 if [ $a -eq 0 ]
 then 
     echo "error"
-    exit 1
+    exit 0
 elif [ $b -eq 0 ]
 then
     b=$a
