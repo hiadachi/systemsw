@@ -25,7 +25,7 @@ diff $tmp-ans $tmp-out || ERROR_EXIT "TEST2-2”
 # TEST3: ZERO handling case1 (0, 40 => 40)                                      
 #————————————————————————
 echo 40 > $tmp-ans
-./15746104.sh 0 40 >$tmp-out || ERROR_EXIT "TEST3-1”
+./15746104.sh 0 40 2>$tmp-out || ERROR_EXIT "TEST3-1”
 diff $tmp-ans $tmp-out || ERROR_EXIT "TEST3-2”
 
 
