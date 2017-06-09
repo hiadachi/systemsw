@@ -13,8 +13,8 @@ fi
 
 if [ $a -eq 0 ]
 then 
-    echo "error"
-    exit 0
+    echo "error" 1>&2
+    exit 1
 elif [ $b -eq 0 ]
 then
     b=$a
